@@ -4,7 +4,7 @@ const AvailableTools = [
 	{
 		"name": "Compound Interest Calculator",
 		"description": "A tool to help you calculate compound interest",
-		"image_url": "https://pbs.twimg.com/profile_images/988272404915875840/lE7ZkrO-_400x400.jpg",
+		"image_url": "./img/thumbnails/compund_interest.png",
 		"tags": [
 			"Finance",
 		],

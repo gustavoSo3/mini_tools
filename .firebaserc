@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "gustavoso3-personal-portfolio"
+  },
+  "targets": {
+    "gustavoso3-personal-portfolio": {
+      "hosting": {
+        "tools": [
+          "mytools-temp"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

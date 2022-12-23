@@ -11,22 +11,20 @@ function App() {
     <Router>
       <div className="App">
         <Navbar />
-        <div className="container">
-          <Routes>
-            <Route path="/" element={<ToolShowcase availableTools={AvailableTools} />} />
-            {
-              AvailableTools.map((tool, key) => {
-                return <Route key={key} path={tool.route} element={React.createElement(tool.component)} />
-              })
+        <Routes>
+          <Route path="/" element={<ToolShowcase availableTools={AvailableTools} />} />
+          {
+            AvailableTools.map((tool, key) => {
+              return <Route key={key} path={tool.route} element={React.createElement(tool.component)} />
+            })
+          }
+          <Route
+            path="*"
+            element={
+              <h2>404 I dont have this tool</h2>
             }
-            <Route
-              path="*"
-              element={
-                <h2>404 I dont have this tool</h2>
-              }
-            />
-          </Routes>
-        </div>
+          />
+        </Routes>
       </div>
     </Router >
   );
